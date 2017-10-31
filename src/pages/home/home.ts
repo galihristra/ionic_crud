@@ -15,7 +15,7 @@ export class HomePage {
     this.http.get('http://172.18.2.137/IonicCrud/Services/WebService1.asmx/getListAccounts')
     .map(data => data.json()).subscribe(res => {
       this.accounts = res;
-      console.log(this.accounts);
+      // console.log(this.accounts);
     })
   }
 
